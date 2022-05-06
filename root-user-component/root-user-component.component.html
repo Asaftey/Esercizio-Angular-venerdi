@@ -1,0 +1,8 @@
+<h1>Users</h1>
+<div class="d-flex">
+  <app-user-card-view
+    *ngFor="let user of users"
+    [users]="user"
+    (deleteUser)="deleteUser($event)"
+  ></app-user-card-view>
+</div>
